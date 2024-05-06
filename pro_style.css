@@ -1,0 +1,186 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('image/bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*------------------------ Nav bar --------------------*/
+
+header {
+    background-color: #1052c4;  
+    padding: 5px 5px 5px 0px; 
+    /* top,right,bottom,left */
+    /* padding-left: 20px; */
+    text-align:left;
+    font-size: 21px;
+    box-shadow: 4px 4px;
+}
+
+nav {
+    padding-left: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(31, 84, 182, 0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #e41c1c;
+    background-color: white;
+}
+
+/*------------------------ Main Body --------------------*/
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
+h1, h2, h3 {
+    color: #333;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a {
+    color: black;
+    text-decoration: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 20px;
+    /* background-color:  rgba(238, 231, 231, 0.5);
+    border: 1px solid rgb(212, 203, 203); */
+}
+
+.underligned{
+    text-decoration: underline;
+}
+
+article img {
+    padding: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+#big{
+    width: 90%;
+    height: auto;
+}
+#small{
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #e1e0e0;
+    padding:0mm;
+    text-align: center;
+}
+
+.smallArt{
+    width: 47%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.bigArt{
+    width: 100%;
+    margin: 5px;    
+}
+
+@media screen and (min-width: 831px) {    /*Desktop*/
+    
+.fixed{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+}
+
+.sideLeft{
+    flex: 0.8;
+}
+
+.sideMid{
+    flex: 2.4;
+}
+
+.sideRight{
+    flex: 0.8;
+}
+
+.vsmallArt{
+    width: 31%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media screen and (max-width: 600px) {    /* Mobile*/
+nav {
+    overflow-x: scroll;
+    white-space: nowrap;
+} 
+
+nav ul li a{
+    display: inline-block;
+}
+
+.vsmallArt{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+.fixed article:hover{
+    box-shadow: 2px 2px 2px 2px;
+    transform: scale(1.03);
+    transition-duration: 0.2s;
+}

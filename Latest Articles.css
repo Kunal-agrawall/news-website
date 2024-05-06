@@ -1,0 +1,197 @@
+
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('image/bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #1052c4;  
+    padding: 5px 5px 5px 0px; 
+    /* top,right,bottom,left */
+    /* padding-left: 20px; */
+    text-align:left;
+    font-size: 21px;
+    box-shadow: 4px 4px;
+}
+
+nav {
+    padding-left: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(31, 84, 182, 0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+   
+}
+
+nav ul li a:hover {
+    color: #e41c1c;
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
+h1, h2, h3 {
+    color: #333;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a {
+    color: black;
+    text-decoration: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(212, 203, 203);
+    background-color:  rgba(243, 240, 240, 0.4);
+}
+
+.vsmallArt article{
+    display: flex;
+    /* word-wrap: break-word; */
+}
+
+.underligned{
+    text-decoration: underline;
+}
+
+article img {
+    padding: 0px;
+    border-radius: 10px;
+}
+#side{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+    background-color: #e1e0e0;
+    padding:0mm;
+    text-align: center;
+}
+
+.vsmallArt{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .smallArt{
+    width: 47%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+} */
+
+
+
+@media screen and (min-width: 831px) {
+    
+.fixed{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+}
+
+.sideLeft{
+    flex: 1;
+}
+
+.sideMid{
+    flex: 3;
+    margin-left: 0%;
+}
+
+#small{
+    max-width: 30%;
+    max-height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+}
+
+@media screen and (max-width: 600px) {
+ nav {
+        overflow-x: scroll;
+        white-space: nowrap;
+    } 
+
+    nav ul li a{
+        display: inline-block;
+    }
+    
+div.scrollmenu a{
+    width: 40%;
+}
+#small{
+    width: 50%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sideMid{
+    flex: 3;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.vsmallArt{
+    margin-left: 0px;
+    font-size: smaller;
+    padding-left: 0px;
+}
+}
+
+.fixed article:hover{
+    box-shadow: 2px 2px 2px 1px;
+    /* transform: scale(1.03); */
+    transition-duration: 0.2s;
+}

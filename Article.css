@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('image/bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #1052c4;  
+    padding: 5px 5px 5px 0px; 
+    /* top,right,bottom,left */
+    /* padding-left: 20px; */
+    text-align:left;
+    font-size: 18px;
+    /* box-shadow: 4px 4px; */
+}
+
+nav {
+    padding-left: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(31, 84, 182, 0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+   
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
+h1, h2, h3 {
+    color: #333;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a {
+    color: black;
+    text-decoration: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 20px;
+   
+    
+}
+
+.underligned{
+
+    text-decoration: underline;
+}
+
+article img {
+    padding: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#big{
+    width: 100%;
+    height: auto;
+}
+#small{
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #e1e0e0;
+    padding:0mm;
+    text-align: center;
+}
+
+.vsmallArt{
+    width: 31%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.smallArt{
+    width: 47%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.bigArt{
+    width: 100%;
+    margin: 5px;    
+}
+
+/* small{ 
+    box-align: center;
+ } */
+
+/* ---------- Scroller ----------*/
+
+div.scrollmenu{
+    background-color: none;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a{
+    width: 20%;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    white-space: normal;
+    padding: 0px;
+    text-decoration: none;
+    margin: 5px;
+    border: 1px solid rgb(212, 203, 203);
+    background-color:  rgba(238, 231, 231, 0.5);
+}
+
+div.scrollmenu a:hover {
+    box-shadow: 1px 1px 1px 1px;
+    transition-duration: 0.2s;
+}
+
+#tsmall{
+    margin-top: 5px;
+    width: 80%;
+    height: auto;
+}
+
+@media screen and (min-width: 831px) {
+    
+.fixed{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+}
+
+.sideLeft{
+    flex: 0.8;
+}
+
+.sideMid{
+    flex: 2.4;
+}
+
+.sideRight{
+    flex: 0.8;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+ nav {
+        overflow-x: scroll;
+        white-space: nowrap;
+    } 
+
+    nav ul li a{
+        display: inline-block;
+    }
+
+div.scrollmenu a{
+    width: 40%;
+}
+}
+
+.sideRight article:hover{
+    box-shadow: 2px 2px 2px 2px;
+    transition-duration: 0.2s;
+    
+}
